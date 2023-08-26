@@ -1,0 +1,21 @@
+//practice
+document.getElementById("add").addEventListener("click",addItems);
+
+const taskList=document.getElementById('task-list')
+const arr=[];
+var separator = "<br>"
+
+
+function addItems(){
+    arr.push(getval()); 
+    taskList.innerHTML= arr.join(separator); 
+    val="";
+
+
+}
+
+function getval(){
+    const val=document.querySelector("input").value;
+    return val;
+}
+

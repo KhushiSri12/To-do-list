@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    background-image: linear-gradient(to left ,#aa076b,#61045f);
+    font-family: cursive;
+}
+.flex{
+    display: flex;
+}
+.container{
+    overflow: hidden;
+}
+main{
+        background-image: linear-gradient(to left ,#ffafbd ,#ffc3a0);
+        height: 300px;
+        width: 400px;
+        margin-top: 160px;
+        margin-left: 560px;
+        border-radius: 4px;
+       
+
+}
+main:hover{
+        box-shadow: 1px 1px 10px antiquewhite;
+}
+main h2{
+        padding: 10px;
+        padding-left: 12px;
+        font-family: cursive;
+}
+main img{
+    padding-top: 14px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/*task*/
+.task{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.task input{
+    border: none;
+    border-radius: 4px;
+    height: 10px;
+    width: 250px;
+    padding: 10px;
+    
+}
+.task button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding:7px 15px;
+    font-family: cursive;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    
+    
+}
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url(images/un2.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+
+
+}
+ul li.checked{
+    text-decoration: line-through;
+    
+
+}
+ul li.checked::before{
+    background-image: url(images/ch3.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 35px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover{
+    background-color:gainsboro;
+}
+
+#task-list{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.scroll {
+    margin:10px 10px;
+    padding:20px;
+    width: 350px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
